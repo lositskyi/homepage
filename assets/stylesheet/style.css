@@ -507,13 +507,19 @@ article {
 }
 .avatar {
   position: relative;
-  max-width: 15rem;
+  width: 100%;
   display: block;
   flex: 1 0 auto;
 }
 @media only screen and (max-width: 1199px) {
   .avatar-wrapper {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .avatar {
+    max-width: 15rem;
   }
 }
 
